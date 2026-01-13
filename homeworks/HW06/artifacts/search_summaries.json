@@ -1,0 +1,36 @@
+{
+    "Decision_Tree": {
+        "best_params": {
+            "max_depth": 7,
+            "min_samples_leaf": 2,
+            "min_samples_split": 5
+        },
+        "cv_score": 0.8216324659561363
+    },
+    "Random_Forest": {
+        "best_params": {
+            "max_depth": null,
+            "min_samples_split": 2,
+            "n_estimators": 100
+        },
+        "cv_score": 0.9237975096201244
+    },
+    "Gradient_Boosting": {
+        "best_params": {
+            "learning_rate": 0.2,
+            "max_depth": 5,
+            "n_estimators": 100
+        },
+        "cv_score": 0.9216781595485625
+    },
+    "Stacking_Classifier": {
+        "model_type": "StackingClassifier",
+        "best_params": "N/A (uses default or pre-defined)",
+        "cv_score": "N/A (calculated internally)",
+        "test_metrics": {
+            "accuracy": 0.9094444444444445,
+            "f1": 0.8170594837261503,
+            "roc_auc": 0.9312870793850078
+        }
+    }
+}

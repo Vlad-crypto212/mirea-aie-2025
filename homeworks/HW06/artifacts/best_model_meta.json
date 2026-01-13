@@ -1,0 +1,10 @@
+{
+    "model_name": "Stacking_Classifier",
+    "model_type": "StackingClassifier",
+    "best_parameters": "N/A (uses default or pre-defined)",
+    "test_metrics": {
+        "accuracy": 0.9094444444444445,
+        "f1": 0.8170594837261503,
+        "roc_auc": 0.9312870793850078
+    }
+}
