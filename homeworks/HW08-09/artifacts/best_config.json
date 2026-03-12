@@ -1,0 +1,14 @@
+{
+    "fast_mode_used": true,
+    "subset_fraction": 0.2,
+    "hidden_sizes": [
+        256,
+        128
+    ],
+    "batch_size": 128,
+    "epochs_base": 15,
+    "epochs_es": 20,
+    "final_model_experiment": "E4",
+    "val_accuracy": 79.01152482269504,
+    "test_evaluation_pending": true
+}
