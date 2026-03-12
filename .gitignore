@@ -28,6 +28,7 @@ __pycache__/
 # Папки и файлы сборки/дистрибуции (если вдруг появятся)
 build/
 dist/
+data/
 eggs/
 *.egg-info/
 .installed.cfg
