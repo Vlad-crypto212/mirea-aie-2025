@@ -1,14 +1,22 @@
 {
-    "fast_mode_used": true,
-    "subset_fraction": 0.2,
-    "hidden_sizes": [
-        256,
-        128
-    ],
-    "batch_size": 128,
-    "epochs_base": 15,
-    "epochs_es": 20,
-    "final_model_experiment": "E4",
-    "val_accuracy": 79.01152482269504,
-    "test_evaluation_pending": true
+    "dataset": "EMNIST",
+    "seed": 42,
+    "model_architecture": {
+        "input_size": 784,
+        "hidden_sizes": [
+            256,
+            128
+        ],
+        "num_classes": 47,
+        "dropout_p": 0.3,
+        "use_batchnorm": false
+    },
+    "training": {
+        "optimizer": "Adam",
+        "lr": 0.001,
+        "early_stopping_patience": 3
+    },
+    "best_val_accuracy": 79.5,
+    "best_val_loss": 0.64,
+    "epochs_trained": 20
 }
