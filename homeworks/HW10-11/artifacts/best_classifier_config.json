@@ -1,0 +1,13 @@
+{
+  "dataset": "STL10",
+  "architecture": "ResNet",
+  "transform_used": "resnet_transform",
+  "hyperparameters": {
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "epochs": 5,
+    "optimizer": "Adam"
+  },
+  "seed": 42,
+  "best_experiment": "C3"
+}
