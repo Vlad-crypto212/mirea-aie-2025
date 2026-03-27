@@ -1,0 +1,11 @@
+{
+  "input_size": 1,
+  "hidden_size": 64,
+  "num_layers": 2,
+  "window_size": 14,
+  "batch_size": 32,
+  "learning_rate": 0.001,
+  "num_epochs": 100,
+  "seed": 987654321,
+  "device": "cpu"
+}
