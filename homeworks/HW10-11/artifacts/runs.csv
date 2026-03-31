@@ -1,7 +1,7 @@
-experiment_id, task          , dataset       , seed, model_summary                          , optimizer       , lr          , epochs_trained, best_val_accuracy, test_accuracy, precision          , recall, mean_iou          , notes
-C1           , classification, STL10         ,   42, SimpleCNN without augmentations        , Adam            , 0.001       ,              5,             0.435,              ,                    ,       ,                   , Baseline CNN
-C2           , classification, STL10         ,   42, SimpleCNN with augmentations           , Adam            , 0.001       ,              5,             0.442,              ,                    ,       ,                   , CNN with data augmentation
-C3           , classification, STL10         ,   42, "ResNet18 (frozen backbone, head only)", Adam (fc only)  , 0.001       ,              5,             0.944,        0.9445,                    ,       ,                   , "Transfer learning, head only"
-C4           , classification, STL10         ,   42, ResNet18 (partial fine-tuning)         , Adam (layer4+fc), 0.0001/0.001,              5,             0.936,              ,                    ,       ,                   , "Transfer learning, partial fine-tuning"
-V1           , detection     , PascalVOC_mock,   42, FasterRCNN_ResNet50_FPN mock           , N/A             , N/A         ,              0,                  ,              , 0.06666666666666667,    0.1, 0.1150400662554458, Confidence threshold 0.3
-V2           , detection     , PascalVOC_mock,   42, FasterRCNN_ResNet50_FPN mock           , N/A             , N/A         ,              0,                  ,              , 0.0                ,    0.0, 0.0               , Confidence threshold 0.7
+experiment_id,task,dataset,seed,model_summary,optimizer,lr,epochs_trained,best_val_accuracy,test_accuracy,precision,recall,mean_iou,notes
+C1,classification,STL10,42,SimpleCNN_basic,Adam_lr0.001,0.001,5,0.344,,,,,Simple CNN without augmentations
+C2,classification,STL10,42,SimpleCNN_augmented,Adam_lr0.001,0.001,5,0.339,,,,,Simple CNN with augmentations
+C3,classification,STL10,42,ResNet18_head_only,Adam_fc_only_lr0.001,0.001,5,0.906,,,,,"ResNet18 frozen backbone, head only"
+C4,classification,STL10,42,ResNet18_partial_finetune,Adam_layer4_fc_lr0.0001_0.001,0.0001/0.001,5,0.917,0.932625,,,,ResNet18 partial fine-tuning
+V1,detection,PascalVOC,42,FasterRCNN_ResNet50_FPN_thresh0.3,N/A,N/A,0,,,0.0,0.0,0.0,Confidence threshold 0.3
+V2,detection,PascalVOC,42,FasterRCNN_ResNet50_FPN_thresh0.7,N/A,N/A,0,,,0.2,0.06666666666666667,0.13871223919528802,Confidence threshold 0.7
