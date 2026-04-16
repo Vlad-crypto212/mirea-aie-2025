@@ -42,7 +42,17 @@
 ## 8. Итоговый вывод
 Эксперименты подтвердили эффективность transfer learning и data augmentation в задачах компьютерного зрения. Также продемонстрирована важность выбора порога уверенности в задачах детекции. Все результаты сохранены в артефактах проекта.
 
-## 9. Использованные артефакты
+## 9. Визуализации
+### Классификация:
+- [Кривые обучения](artifacts/figures/classification_curves_best.png)
+- [Сравнение моделей](artifacts/figures/classification_compare.png)
+- [Примеры аугментаций](artifacts/figures/augmentations_preview.png)
+
+### Детекция:
+- [Примеры детекции](artifacts/figures/detection_examples.png)
+- [Метрики детекции](artifacts/figures/detection_metrics.png)
+
+## 10. Использованные артефакты
 - [runs.csv](artifacts/runs.csv) - результаты всех экспериментов
 - [best_classifier.pt](artifacts/best_classifier.pt) - лучшая модель
 - [best_classifier_config.json](artifacts/best_classifier_config.json) - конфигурация лучшей модели
