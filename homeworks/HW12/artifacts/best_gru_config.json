@@ -7,5 +7,7 @@
   "learning_rate": 0.001,
   "num_epochs": 100,
   "seed": 987654321,
-  "device": "cpu"
+  "device": "cpu",
+  "scaler_used": true,
+  "scaler_type": "StandardScaler"
 }
